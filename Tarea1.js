@@ -1,11 +1,14 @@
-const num1 = parseInt(prompt('Ingrese primer número:', ''));
-const num2 = parseInt(prompt('Ingrese segundo número:', ''));
-const num3 = parseInt(prompt('Ingrese tercer número:', ''));
+const num1 = parseInt(prompt('Cuantos metros va a recorrer?:', ''));
 
-if (num1 > num2 && num1 > num3) {
-    document.write(`el mayor es el  ${num1}`);
-} else if (num2 > num3) {
-    document.write(`el mayor es el  ${num2}`);
+
+if (num1 <=1000) {
+    document.write(`Podes apovechar que son pocos metros e ir CAMINANDO`);
+} else if (num1<=10000) {
+    document.write(`Te recomendamos ir en BICICLETA`);
+} else if (num1<=30000) {
+    document.write(`Te recomendamos ir en COLECTIVO`);
+} else if (num1<=100000) {
+    document.write(`Te recomendamos ir en AUTO`);
 } else {
-    document.write(`el mayor es el  ${num3}`);
-}
+    document.write(`Te recomendamos ir en AVION`);
+} 
