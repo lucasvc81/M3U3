@@ -8,5 +8,4 @@ mayor = numeros[i];
 }
 }
 
-console.log('el mayor de ' + numeros + ' es ' + mayor);
-		
+document.write('El mayor de ' + numeros + ' es ' + mayor);
